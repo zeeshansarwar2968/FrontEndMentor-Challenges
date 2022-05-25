@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url('./images/bg-desktop.svg');
+    background-repeat: no-repeat ;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 960px;
+    margin: auto;
+    max-width: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+.grid_layout{
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-columns: 8fr 6fr;
+    column-gap: 1.2rem;
+
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+p{
+    /* font-family: 'Open Sans', sans-serif; */
+    color: #fff;
+    /* font-weight: 400; */
+    opacity: 0.7;
+}
+
+button{
+    padding: 16px 54px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    color:hsl(257, 40%, 49%) ;
+    box-shadow: 0 5px 10px rgba(0,0, 0, 0.4) ;
+        
+}
+/* button:hover{
+    pointer-events: visible;
+} */
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 ;
+    list-style-type: none;
+}
+
+ul i{
+    color: white;
+}
+ul a{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-left: 14px;
+    text-decoration: none;
+
+}
+
+@media screen and (max-width : 768px) {
+    .grid_layout{
+        grid-template-columns: 1fr;    
+    }
+    
+    .logo{
+        width:200px ;
+    }
+    .illustration-mockups{
+        width: 50%;
+    }
+
+    .content{
+        width: 50%;
+        text-align: center;
+    }
+    ul{
+        justify-content: flex-start;
+        position: absolute;
+        right: 36%;
+        
+    }
+
+    .attribution{
+        justify-content: flex-start;
+        position: absolute;
+        left: 8%;
+        text-align: center;
+        
+    }
+}
