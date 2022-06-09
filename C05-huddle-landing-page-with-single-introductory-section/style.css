@@ -57,9 +57,12 @@ button{
     box-shadow: 0 5px 10px rgba(0,0, 0, 0.4) ;
         
 }
-/* button:hover{
+button:hover{
     pointer-events: visible;
-} */
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+    cursor: pointer;
+}
 
 ul{
     display: flex;
@@ -82,6 +85,13 @@ ul a{
     margin-left: 14px;
     text-decoration: none;
 
+}
+
+ul a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+    cursor: pointer;
 }
 
 @media screen and (max-width : 768px) {
